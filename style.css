@@ -1,0 +1,154 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto,sans-serif;
+}
+body{
+    background-color: lightyellow;
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+    color: lightyellow;
+    background-color: green;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius:  0 40px;
+}
+h1 span{
+    color:goldenrod;
+}
+h1 i {
+    font-size: 30px;
+}
+ul{ 
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+ul li {
+    color: green;
+    background-color: white;
+    border: green solid ;
+    border-radius: 0 40px;
+    padding: 5px 20px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px lightgray , -2px -2px 5px lightgray;
+}
+li:first-of-type{
+    background-color: green;
+    color: white;
+}
+li:hover{
+    background-color: green;
+    color: white;
+}
+
+section{
+    padding: 20px;
+    margin-top: 5px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px ;
+    gap: 20px;
+    flex: 1 1 20% ;
+    box-shadow: 0 0 7px black;
+    background-color: yellowgreen;
+    border-radius: 0 40px;
+    transition: .5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+div .promo{
+    position: absolute;
+    color:darkcyan;
+    background-color: #ffffff81;
+    padding: 5px;
+    border-radius: 0 20px   20px 0;
+    top: 30px;
+    left:0;
+}
+.card:hover{
+    box-shadow:0 0 7px green;   
+}
+
+.card img{
+    border-radius: 0 40px;
+    cursor: pointer;
+    align-self: center;
+    border: 4px solid lightyellow;
+    transition: .5s ease-in-out;
+}
+.card img:hover{
+    border-color: green;
+    
+}
+img:hover + h2{
+   color : green ;
+}
+
+.card h2 {
+    color: lightyellow;
+    transition: .5s ease-in-out;
+    background-color:  rgba(224, 255, 255, 0.171);
+    padding: 10px;
+    border-radius: 0 40px;
+    width: fit-content;
+}
+.card p {
+    background-color:rgba(224, 255, 255, 0.171);
+    padding: 15px;
+    border-radius: 0 40px;
+    color:darkslategrey;
+    text-align: center;
+}
+footer{
+    background-color: rgba(153, 205, 50, 0.194);
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+footer p:hover{
+    text-decoration: underline;
+}
+footer i{
+    color: goldenrod;
+    font-size: 12px;
+}
+/* ------ Media Query ------ */
+
+@media  screen and ( max-width:992px) {
+    .card{
+        flex: 0 0 45%;
+    }
+    ul {
+        gap:5px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .card{
+        flex: 0 0 100%;
+    }
+    ul {
+        gap:0px;
+    }
+}
