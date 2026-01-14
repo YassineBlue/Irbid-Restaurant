@@ -6,10 +6,6 @@
     font-family: acme;
     src: url(fonts/Acme-Regular.ttf);
 }
-@font-face {
-    font-family:cafe ;
-    src: url(fonts/Cafe\ Francoise_D.otf);
-}
 
 *{
     padding: 0;
@@ -153,7 +149,7 @@ img:hover + h2{
 
 
 .card h2 {
-    font-family: cafe,Roboto,sans-serif ;
+    font-family: acme,Roboto,sans-serif ;
     color: white;
     transition: .5s ease-in-out;
     background-color:  #41666f41;
